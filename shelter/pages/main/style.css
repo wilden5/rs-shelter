@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Arial';
+    src: url('../../assets/fonts/arial/Arial.woff2') format('woff2'),
+    url('../../assets/fonts/arial/Arial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('../../assets/fonts/georgia/Georgia.woff2') format('woff2'),
+    url('../../assets/fonts/georgia/Georgia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     max-width: 1280px;
     display: flex;
@@ -16,7 +34,14 @@ a {
 
 /*Header styles starts*/
 
+header {
+    position: relative;
+}
+
 .header__container {
+    padding-top: 1.875rem;
+    padding-left: 2.5rem;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,35 +56,39 @@ a {
 
 .header__name {
     color: #F1CDB3;
-    font-family: 'Georgia';
+    font-family: 'Georgia', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
     line-height: 110%;
     letter-spacing: 0.06em;
+    margin-bottom: 0.625rem;
 }
 
 .header__motto {
     color: #FFFFFF;
-    font-family: 'Arial';
+    font-family: 'Arial', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 0.813rem;
-    line-height: 15px;
+    line-height: 0.938rem;
     letter-spacing: 0.1em;
+    padding-left: 0.25rem;
 }
 
 .navbar__list {
     display: flex;
     list-style-type: none;
-    gap: 35px;
+    gap: 2.25rem;
+    padding-bottom: 0.188rem;
 }
 
 .navbar__link {
-    color: #CDCDCD;
+    font-family: 'Arial', serif;
     font-style: normal;
+    color: #CDCDCD;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 0.938rem;
     line-height: 160%;
 }
 
@@ -67,14 +96,30 @@ a {
 
 /*Not-only styles starts*/
 
+.main-page__not-only {
+    padding-top: 5.625rem;
+    background-image: url(../../assets/images/start-screen-gradient-background.png);
+}
+
 .not-only__container {
     display: flex;
+    align-items: center;
     width: 93.75%;
     margin: 0 auto;
 }
 
 .not-only__content {
     width: 38.33%;
+    margin-right: 2.813rem;
+}
+
+.not-only__heading {
+
+}
+
+.not-only__puppy {
+    padding-top: 5.625rem;
+    display: flex;
 }
 
 /*Not-only styles ends*/
