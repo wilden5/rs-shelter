@@ -2,10 +2,10 @@ body {
     max-width: 1280px;
     display: flex;
     flex-direction: column;
-    /*margin: auto;*/
+    margin: 0;
 }
 
-h1, ul {
+h1, h2, p, ul {
     margin: 0;
     padding: 0;
 }
@@ -21,7 +21,7 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 93.75%;
-    background-color: darkolivegreen;
+    margin: 0 auto;
 }
 
 .header__logo-container {
@@ -67,6 +67,14 @@ a {
 
 /*Not-only styles starts*/
 
+.not-only__container {
+    display: flex;
+    width: 93.75%;
+    margin: 0 auto;
+}
 
+.not-only__content {
+    width: 38.33%;
+}
 
 /*Not-only styles ends*/
