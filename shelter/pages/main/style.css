@@ -30,6 +30,11 @@ h1, h2, p, ul {
 
 a {
     text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
 }
 
 /*Header styles starts*/
@@ -92,6 +97,11 @@ header {
     line-height: 160%;
 }
 
+.navbar__link:hover {
+    color: #FAFAFA;
+    border-bottom: 0.188rem solid #F1CDB3;
+}
+
 /*Header styles ends*/
 
 /*Not-only styles starts*/
@@ -109,12 +119,47 @@ header {
 }
 
 .not-only__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 38.33%;
-    margin-right: 2.813rem;
+    margin-right: 2.7rem;
 }
 
 .not-only__heading {
+    width: 67.8%;
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.75rem;
+    line-height: 130%;
+    color: #FFFFFF;
+    padding-top: 0.625rem;
+    margin-bottom: 2.625rem;
+}
 
+.not-only__subheading {
+    font-family: 'Arial', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.938rem;
+    line-height: 160%;
+    color: #CDCDCD;
+    margin-bottom: 2.625rem;
+}
+
+.not-only__button {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.063rem;
+    line-height: 130%;
+    color: #292929;
+    letter-spacing: 0.06em;
+    background: #F1CDB3;
+    padding: 0.938rem 2.813rem;
+    border: none;
+    border-radius: 6.25rem;
 }
 
 .not-only__puppy {
