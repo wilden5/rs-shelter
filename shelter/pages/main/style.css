@@ -23,7 +23,7 @@ body {
     margin: 0;
 }
 
-h1, h2, h3, p, ul, span {
+h1, h2, h3, h4, p, ul, span {
     margin: 0;
     padding: 0;
 }
@@ -275,7 +275,7 @@ header {
 }
 
 .p-card1, .p-card2 {
- margin-right: 2.313rem;
+    margin-right: 2.313rem;
 }
 
 .pe-name {
@@ -322,3 +322,55 @@ header {
 }
 
 /*Pets styles ends*/
+
+/*Help styles starts*/
+
+.help__container {
+    width: 93.75%;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 6.25rem;
+}
+
+.help__heading {
+    width: 26%;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.188rem;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-bottom: 3.75rem;
+}
+
+.help__list {
+    width: 85.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7.438rem;
+    row-gap: 3.563rem;
+}
+
+.help__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help__text {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    padding-top: 1.5rem;
+}
+
+/*Help styles ends*/
