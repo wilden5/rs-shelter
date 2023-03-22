@@ -473,5 +473,130 @@ header {
     color: #B2B2B2;
 }
 
-
 /*Donation styles ends*/
+
+/*Footer styles starts*/
+
+.footer {
+    background-image: url(../../assets/images/footer-gradient-background.png);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    width: 93.75%;
+    margin: auto;
+    padding-top: 2.5rem;
+}
+
+.footer_puppy img {
+    margin-bottom: -0.25rem;
+}
+
+.footer__contacts {
+    width: 23.4%;
+    padding-top: 1rem;
+}
+
+.contacts__title {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.188rem;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin-bottom: 2.5rem;
+}
+
+.contacts__email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.188rem;
+}
+
+.contacts__email-icon {
+    margin-right: 1.25rem;
+}
+
+.contacts__direct-email {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+
+.contacts__phone {
+    display: flex;
+}
+
+.contacts__phone-icon {
+    margin-right: 1.25rem;
+}
+
+.contacts__direct-phone {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    padding-top: 0.313rem;
+}
+
+.footer__locations {
+    width: 25.2%;
+    padding-top: 1rem;
+}
+
+.locations__title {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.188rem;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin-bottom: 2.125rem;
+}
+
+.locations__boston {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.boston__nav-icon,
+.london__nav-icon {
+    margin-right: 1.25rem;
+}
+
+.boston__nav-address {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+
+.locations__london {
+    display: flex;
+}
+
+.london__nav-address {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    padding-top: 0.25rem;
+}
+
+/*Footer styles ends*/
