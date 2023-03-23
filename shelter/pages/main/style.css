@@ -25,11 +25,15 @@
     font-display: swap;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     max-width: 1280px;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, p, ul, span {
@@ -40,6 +44,10 @@ h1, h2, h3, h4, p, ul, span {
 a {
     text-decoration: none;
     cursor: pointer;
+}
+
+a:visited {
+    color: inherit;
 }
 
 button {
@@ -97,6 +105,10 @@ header {
     padding-bottom: 0.188rem;
 }
 
+.navbar__item {
+    color: #CDCDCD;
+}
+
 .navbar__link {
     font-family: 'Arial', serif;
     font-style: normal;
@@ -104,9 +116,11 @@ header {
     font-weight: 400;
     font-size: 0.938rem;
     line-height: 160%;
+    padding-bottom: 3px;
 }
 
-.navbar__link:hover {
+.navbar__link:hover,
+.nav-active {
     color: #FAFAFA;
     border-bottom: 0.188rem solid #F1CDB3;
 }
@@ -158,6 +172,9 @@ header {
 }
 
 .not-only__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Georgia', serif;
     font-style: normal;
     font-weight: 400;
@@ -166,9 +183,14 @@ header {
     color: #292929;
     letter-spacing: 0.06em;
     background: #F1CDB3;
-    padding: 0.938rem 2.813rem;
+    width: 207px;
+    height: 52px;
     border: none;
     border-radius: 6.25rem;
+}
+
+.not-only__button a {
+    padding: 15px 25px;
 }
 
 .not-only__puppy {
@@ -277,10 +299,15 @@ header {
 }
 
 .pets__card {
+    transition: all 1.5s ease 0s;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #FAFAFA;
+}
+
+.pets__card:hover {
+    transform: scale(1.03);
 }
 
 .p-card1, .p-card2 {
@@ -314,7 +341,14 @@ header {
     margin-bottom: 1.875rem;
 }
 
+.pe-button:hover{
+    background: #F1CDB3;
+}
+
 .pets__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     align-self: center;
     font-family: 'Georgia', serif;
     font-style: normal;
@@ -326,8 +360,14 @@ header {
     background: #F1CDB3;
     border-radius: 6.25rem;
     border: none;
-    padding: 0.938rem 2.813rem;
+    width: 261px;
+    height: 52px;
     margin-bottom: 6.25rem;
+}
+
+.pets__button a {
+    color: inherit;
+    padding: 15px 30px;
 }
 
 /*Pets styles ends*/
@@ -446,6 +486,7 @@ header {
     width: 91.40%;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    color: #545454;
 }
 
 .credit-card__icon {
@@ -460,7 +501,6 @@ header {
     font-size: 1.25rem;
     line-height: 115%;
     letter-spacing: 0.06em;
-    color: #545454;
 }
 
 .donation__legal-information {

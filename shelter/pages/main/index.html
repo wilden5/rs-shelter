@@ -12,16 +12,18 @@
 <body>
 <header class="header">
 	<div class="header__container">
-		<div class="header__logo-container">
-			<h1 class="header__name">Cozy House</h1>
-			<span class="header__motto">Shelter for pets in Boston</span>
-		</div>
+		<a href="#0">
+			<div class="header__logo-container">
+				<h1 class="header__name">Cozy House</h1>
+				<span class="header__motto">Shelter for pets in Boston</span>
+			</div>
+		</a>
 		<nav class="header__navbar">
 			<ul class="navbar__list">
-				<li class="navbar__item"><a href="#" class="navbar__link">About the shelter</a></li>
-				<li class="navbar__item"><a href="#" class="navbar__link">Our pets</a></li>
-				<li class="navbar__item"><a href="#" class="navbar__link">Help the shelter</a></li>
-				<li class="navbar__item"><a href="#" class="navbar__link">Contacts</a></li>
+				<li class="navbar__item"><a href="#about" class="navbar__link nav-active">About the shelter</a></li>
+				<li class="navbar__item"><a href="../pets/index.html" class="navbar__link">Our pets</a></li>
+				<li class="navbar__item"><a href="#help" class="navbar__link">Help the shelter</a></li>
+				<li class="navbar__item"><a href="#footer" class="navbar__link">Contacts</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -33,7 +35,7 @@
 				<h2 class="not-only__heading">Not only people need a house</h2>
 				<p class="not-only__subheading">We offer to give a chance to a little and nice puppy with an extremely
 					wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-				<button class="not-only__button">Make a friend</button>
+				<a class="not-only__button" href="#our-friends">Make a friend</a>
 			</div>
 			<picture class="not-only__puppy">
 				<img src="../../assets/images/start-screen-puppy.png" alt="shelter-puppy">
@@ -60,7 +62,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="pets" class="main-page__pets">
+	<section id="our-friends" class="main-page__pets">
 		<div class="pets__container">
 			<h3 class="pets__heading">Our friends who
 				are&nbsp;looking for a house</h3>
@@ -89,7 +91,7 @@
 				</div>
 				<button class="pets__next-card pets__slider-button"></button>
 			</div>
-			<button class="pets__button">Get to know the rest</button>
+			<a class="pets__button" href="../pets/index.html">Get to know the rest</a>
 		</div>
 	</section>
 	<section id="help" class="main-page__help">
@@ -154,7 +156,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="donation" class="main-page__donation">
+	<section id="in-addiction" class="main-page__donation">
 		<div class="donation__container">
 			<picture class="donation__dog">
 				<img src="../../assets/images/donation-dog.png" alt="donation-dog">
@@ -167,7 +169,7 @@
 						<picture class="credit-card__icon">
 							<img src="../../assets/icons/credit-card.svg" alt="credit-card">
 						</picture>
-						<span class="credit-card__number">8380 2880 8028 8791 7435</span>
+						<a class="credit-card__number" href="#0">8380 2880 8028 8791 7435</a>
 					</div>
 				</div>
 				<p class="donation__legal-information">Legal information and lorem ipsum dolor sit amet, consectetur
@@ -177,7 +179,7 @@
 		</div>
 	</section>
 </main>
-<footer class="footer">
+<footer id="footer" class="footer">
 	<div class="footer__container">
 		<div class="footer__contacts">
 			<h3 class="contacts__title">For questions and suggestions</h3>
