@@ -25,14 +25,15 @@
     font-display: swap;
 }
 
+[class*=__container] {
+    max-width: 80rem;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    max-width: 1280px;
-    display: flex;
-    flex-direction: column;
     margin: 0;
 }
 
@@ -56,14 +57,17 @@ button {
     padding-top: 1.875rem;
     display: flex;
     justify-content: space-between;
-    width: 93.75%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .header__logo-container {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.875rem;
+}
+
+.header__main-link {
+    padding-left: 2.5rem;
 }
 
 .header__name {
@@ -91,8 +95,9 @@ button {
 .navbar__list {
     display: flex;
     list-style-type: none;
-    gap: 2.25rem;
     padding-top: 1rem;
+    gap: 2.188rem;
+    margin-right: 2.625rem;
 }
 
 .navbar__link {
@@ -136,7 +141,7 @@ button {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     row-gap: 1.813rem;
     margin-bottom: 3.625rem;
 }
@@ -201,6 +206,7 @@ button {
 .pets__navigation {
     width: 28.5%;
     align-self: center;
+    padding-left: 1.563rem;
 }
 
 .pag-button {
@@ -242,6 +248,7 @@ button {
 /*Footer styles starts*/
 
 .footer {
+    background-size: cover;
     background-image: url(../../assets/images/footer-gradient-background.png);
 }
 
@@ -255,11 +262,13 @@ button {
 
 .footer_puppy img {
     margin-bottom: -0.25rem;
+    padding-right: 2.438rem;
 }
 
 .footer__contacts {
     width: 23.4%;
     padding-top: 1rem;
+    padding-left: 2.5rem;
 }
 
 .contacts__title {
@@ -313,7 +322,7 @@ button {
 }
 
 .footer__locations {
-    width: 25.2%;
+    width: 25%;
     padding-top: 1rem;
 }
 
