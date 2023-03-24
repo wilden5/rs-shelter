@@ -25,6 +25,10 @@
     font-display: swap;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     max-width: 1280px;
     display: flex;
@@ -98,6 +102,12 @@ button {
     font-weight: 400;
     font-size: 0.938rem;
     line-height: 160%;
+    padding-bottom: 0.188rem;
+}
+
+.nav-active {
+    color: #292929;
+    border-bottom: 0.188rem solid #F1CDB3;
 }
 
 .navbar__link:hover {
@@ -146,10 +156,15 @@ button {
 }
 
 .pets__card {
+    transition: all 1.5s ease 0s;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #FAFAFA;
+}
+
+.pets__card:hover {
+    transform: scale(1.04);
 }
 
 .pe-name {
@@ -179,6 +194,10 @@ button {
     margin-bottom: 1.875rem;
 }
 
+.pe-button:hover {
+    background: #F1CDB3;
+}
+
 .pets__navigation {
     width: 28.5%;
     align-self: center;
@@ -200,13 +219,14 @@ button {
     margin-right: 1rem;
 }
 
-.pag-button:last-child{
+.pag-button:last-child {
     margin-right: 0;
 }
 
-.pag-ua{
+.pag-ua {
     border: 0.125rem solid #CDCDCD;
     color: #CDCDCD;
+    cursor: auto;
 }
 
 .pets__paginator-active {
@@ -341,6 +361,10 @@ button {
     letter-spacing: 0.06em;
     color: #F1CDB3;
     padding-top: 0.25rem;
+}
+
+.footer a:hover {
+    color: white;
 }
 
 /*Footer styles ends*/
