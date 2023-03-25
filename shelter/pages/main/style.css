@@ -30,10 +30,7 @@ html {
 }
 
 body {
-    max-width: 1280px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+    margin: 0;
 }
 
 h1, h2, h3, h4, p, ul, span {
@@ -54,6 +51,10 @@ button {
     cursor: pointer;
 }
 
+[class*=__container] {
+    max-width: 80rem;
+}
+
 .not-only__button:hover,
 .pets__button:hover {
     background-color: white;
@@ -68,13 +69,18 @@ header {
 
 .header__container {
     padding-top: 1.875rem;
-    padding-left: 2.5rem;
     position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 93.75%;
+    max-width: 80rem;
     margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.header__main-link {
+    padding-left: 40px;
 }
 
 .header__logo-container {
@@ -109,6 +115,7 @@ header {
     list-style-type: none;
     gap: 2.25rem;
     padding-bottom: 0.188rem;
+    padding-right: 40px;
 }
 
 .navbar__item {
@@ -137,13 +144,13 @@ header {
 
 .main-page__not-only {
     padding-top: 5.625rem;
+    background-size: cover;
     background-image: url(../../assets/images/start-screen-gradient-background.png);
 }
 
 .not-only__container {
     display: flex;
     align-items: center;
-    width: 93.75%;
     margin: 0 auto;
 }
 
@@ -151,8 +158,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 38.33%;
-    margin-right: 2.65rem;
+    width: 37%;
+    padding-left: 40px;
+    margin-right: 28px;
 }
 
 .not-only__heading {
@@ -212,13 +220,14 @@ header {
 .about__container {
     display: flex;
     justify-content: center;
-    width: 93.75%;
     padding-top: 3.625rem;
     margin: 0 auto 6rem;
 }
 
 .about__content {
-    width: 35.83%;
+    width: 34%;
+    display: flex;
+    flex-direction: column;
 }
 
 .about__heading {
@@ -232,6 +241,7 @@ header {
     color: #545454;
     margin-bottom: 1.563rem;
     padding-top: 2.188rem;
+    padding-left: 2px;
 }
 
 .about__subheading-top {
@@ -245,6 +255,8 @@ header {
     font-size: 0.938rem;
     line-height: 160%;
     color: #4C4C4C;
+    padding-right: 5px;
+    padding-left: 2px;
 }
 
 .about__pets {
@@ -261,7 +273,6 @@ header {
 }
 
 .pets__container {
-    width: 93.75%;
     display: flex;
     flex-direction: column;
     padding-top: 5.063rem;
@@ -303,6 +314,7 @@ header {
     align-items: center;
     margin-bottom: 3.625rem;
     gap: 3.313rem;
+    justify-content: center;
 }
 
 .pets__card {
@@ -383,7 +395,6 @@ header {
 /*Help styles starts*/
 
 .help__container {
-    width: 93.75%;
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -439,21 +450,21 @@ header {
 }
 
 .donation__dog {
-    padding-top: 0.313rem;
-    margin-right: 1.875rem;
+    padding-top: 7px;
 }
 
 .donation__container {
     display: flex;
     align-items: center;
-    width: 71.48%;
-    margin: auto;
+    justify-content: center;
+    margin: 0 auto;
     padding-top: 5rem;
     padding-bottom: 6.25rem;
+    gap: 31px;
 }
 
 .donation__content {
-    width: 41.53%;
+    width: 29.68%;
 }
 
 .donation__heading {
@@ -529,24 +540,26 @@ header {
 /*Footer styles starts*/
 
 .footer {
+    background-size: cover;
     background-image: url(../../assets/images/footer-gradient-background.png);
 }
 
 .footer__container {
     display: flex;
     justify-content: space-between;
-    width: 93.75%;
     margin: auto;
     padding-top: 2.5rem;
 }
 
 .footer_puppy img {
     margin-bottom: -0.25rem;
+    padding-right: 40px;
 }
 
 .footer__contacts {
     width: 23.4%;
     padding-top: 1rem;
+    padding-left: 40px;
 }
 
 .contacts__title {
@@ -600,7 +613,7 @@ header {
 }
 
 .footer__locations {
-    width: 25.2%;
+    width: 25%;
     padding-top: 1rem;
 }
 
