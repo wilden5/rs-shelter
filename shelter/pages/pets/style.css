@@ -129,12 +129,11 @@ button {
 }
 
 .pets__container {
-    width: 93.75%;
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
     margin: 0 auto;
-    padding-bottom: 6.25rem;
+    padding-bottom: 6.3rem;
 }
 
 .pets__content {
@@ -255,20 +254,19 @@ button {
 .footer__container {
     display: flex;
     justify-content: space-between;
-    width: 93.75%;
     margin: auto;
     padding-top: 2.5rem;
 }
 
 .footer_puppy img {
     margin-bottom: -0.25rem;
-    padding-right: 2.438rem;
+    padding-right: 40px;
 }
 
 .footer__contacts {
     width: 23.4%;
     padding-top: 1rem;
-    padding-left: 2.5rem;
+    padding-left: 40px;
 }
 
 .contacts__title {
