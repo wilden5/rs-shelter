@@ -681,10 +681,17 @@ header {
 
 /*Media 768 starts*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
+
+    .p-card3 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
 
     /*Header 768 starts*/
-
     .header__main-link {
         padding-left: 2rem;
     }
@@ -775,10 +782,6 @@ header {
     .pets__next-card {
         margin-right: 1.25rem;
         margin-bottom: 0.313rem;
-    }
-
-    .p-card3 {
-        display: none;
     }
 
     .pe-name {
