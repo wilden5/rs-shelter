@@ -806,6 +806,59 @@ header {
 
     /*Help 768 ends*/
 
+    /*Donation 768 starts*/
+
+    .donation__container {
+        flex-direction: column;
+        padding-bottom: 6rem;
+    }
+
+    .donation__dog {
+        order: 2;
+        padding-top: 1.8rem;
+    }
+
+    .donation__content {
+        width: 49.5%;
+    }
+
+    .donation__subheading {
+        margin-bottom: 1.25rem;
+    }
+
+    /*Donation 768 ends*/
+
+    /*Footer 768 starts*/
+
+    .footer__container {
+        flex-wrap: wrap;
+        padding-top: 1.875rem;
+        justify-content: space-evenly;
+        row-gap: 3.75rem;
+    }
+
+    .footer__contacts {
+        width: 36.8%;
+        padding: 0 0 0 0.313rem;
+    }
+
+    .footer__locations {
+        width: 39.3%;
+        padding: 0;
+        margin-right: 0.313rem;
+    }
+
+    .footer_puppy {
+        width: 44%;
+    }
+
+    .footer_puppy img {
+        padding-left: 1.188rem;
+        padding-right: 0;
+    }
+
+    /*Footer 768 ends*/
+
 }
 
 /*Media 768 ends*/
