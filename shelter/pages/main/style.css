@@ -80,7 +80,7 @@ header {
 }
 
 .header__main-link {
-    padding-left: 40px;
+    padding-left: 2.5rem;
 }
 
 .header__logo-container {
@@ -115,7 +115,7 @@ header {
     list-style-type: none;
     gap: 2.25rem;
     padding-bottom: 0.188rem;
-    padding-right: 40px;
+    padding-right: 2.5rem;
 }
 
 .navbar__item {
@@ -159,8 +159,8 @@ header {
     flex-direction: column;
     align-items: flex-start;
     width: 37%;
-    padding-left: 40px;
-    margin-right: 28px;
+    padding-left: 2.5rem;
+    margin-right: 1.75rem;
 }
 
 .not-only__heading {
@@ -213,6 +213,10 @@ header {
     display: flex;
 }
 
+.not-only__puppy img {
+    max-width: 100%;
+}
+
 /*Not-only styles ends*/
 
 /*About styles starts*/
@@ -241,7 +245,7 @@ header {
     color: #545454;
     margin-bottom: 1.563rem;
     padding-top: 2.188rem;
-    padding-left: 2px;
+    padding-left: 0.125rem;
 }
 
 .about__subheading-top {
@@ -255,8 +259,8 @@ header {
     font-size: 0.938rem;
     line-height: 160%;
     color: #4C4C4C;
-    padding-right: 5px;
-    padding-left: 2px;
+    padding-right: 0.313rem;
+    padding-left: 0.125rem;
 }
 
 .about__pets {
@@ -315,6 +319,7 @@ header {
     margin-bottom: 3.625rem;
     gap: 3.313rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .pets__card {
@@ -450,7 +455,7 @@ header {
 }
 
 .donation__dog {
-    padding-top: 7px;
+    padding-top: 0.438rem;
 }
 
 .donation__container {
@@ -460,7 +465,7 @@ header {
     margin: 0 auto;
     padding-top: 5rem;
     padding-bottom: 6.25rem;
-    gap: 31px;
+    gap: 1.938rem;
 }
 
 .donation__content {
@@ -553,13 +558,13 @@ header {
 
 .footer_puppy img {
     margin-bottom: -0.25rem;
-    padding-right: 40px;
+    padding-right: 2.5rem;
 }
 
 .footer__contacts {
     width: 23.4%;
     padding-top: 1rem;
-    padding-left: 40px;
+    padding-left: 2.5rem;
 }
 
 .contacts__title {
@@ -673,3 +678,76 @@ header {
 }
 
 /*Footer styles ends*/
+
+/*Media 768 starts*/
+
+@media screen and (max-width: 768px) {
+
+    /*Header 768 starts*/
+
+    .header__main-link {
+        padding-left: 2rem;
+    }
+
+    .navbar__list {
+        gap: 2.188rem;
+        padding-right: 2rem;
+    }
+
+    /*Header 768 ends*/
+
+    /*Not only 768 starts*/
+
+    .not-only__container {
+        flex-direction: column;
+        margin-top: 3.125rem;
+    }
+
+    .not-only__content {
+        width: 61%;
+    }
+
+    .not-only__button {
+        align-self: center;
+        margin-right: 0.875rem;
+    }
+
+    .not-only__puppy {
+        justify-content: flex-end;
+        padding-top: 6.25rem;
+    }
+
+    .not-only__puppy img {
+        max-width: 81.4%;
+    }
+
+    /*Not only 768 ends*/
+
+    /*About 768 starts*/
+
+    .about__container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+    }
+
+    .about__pets {
+        order: 2;
+        margin-right: 0;
+        padding-top: 0;
+    }
+
+    .about__content {
+        width: 57%;
+        margin-bottom: 5rem;
+    }
+
+    .about__heading {
+        padding-top: 0;
+    }
+
+    /*About 768 ends*/
+
+}
+
+/*Media 768 ends*/
