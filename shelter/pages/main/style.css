@@ -748,6 +748,64 @@ header {
 
     /*About 768 ends*/
 
+    /*Pets 768 starts*/
+
+    .pets__heading {
+        width: 53%;
+    }
+
+    .pets__slider {
+        gap: 0;
+        justify-content: space-evenly;
+    }
+
+    .p-card1 {
+        margin-right: 1.875rem;
+    }
+
+    .p-card2 {
+        margin-right: 0;
+    }
+
+    .pets__previous-card {
+        margin-left: 1.25rem;
+        margin-bottom: 0.313rem;
+    }
+
+    .pets__next-card {
+        margin-right: 1.25rem;
+        margin-bottom: 0.313rem;
+    }
+
+    .p-card3 {
+        display: none;
+    }
+
+    .pe-name {
+        margin-bottom: 1.6rem;
+    }
+
+    /*Pets 768 ends*/
+
+    /*Help 768 starts*/
+
+    .help__heading {
+        width: 41%;
+    }
+
+    .help__list {
+        gap: 0;
+        justify-content: space-between;
+        row-gap: 3.563rem;
+        width: 82%;
+    }
+
+    .help__item {
+        width: 27%;
+    }
+
+    /*Help 768 ends*/
+
 }
 
 /*Media 768 ends*/
