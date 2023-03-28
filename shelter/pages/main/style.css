@@ -868,7 +868,13 @@ header {
 
 /*Media 320 starts*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px){
+    .header__navbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
 
     .header__navbar {
         display: none;
@@ -995,6 +1001,156 @@ header {
     .pets__next-card {
         margin-left: 0.688rem;
     }
+
+    .pets__button {
+        margin-bottom: 2.625rem;
+    }
+
+    .help__container {
+        padding-top: 2.625rem;
+        margin-bottom: 2.625rem;
+    }
+
+    .help__heading {
+        width: 70%;
+        font-size: 1.563rem;
+        letter-spacing: 0.06em;
+        text-align: center;
+        margin-bottom: 2.625rem;
+    }
+
+    .help__list {
+        width: 90.62%;
+        row-gap: 1.9rem;
+    }
+
+    .help__item {
+        width: 44.82%;
+    }
+
+    .help__text {
+        font-size: 0.938rem;
+        line-height: 110%;
+        padding-top: 1rem;
+    }
+
+    .help__icon {
+        padding-left: 0.625rem;
+    }
+
+    .help__icon img {
+        width: 83.4%;
+    }
+
+    .donation__container {
+        padding-top: 2.625rem;
+        padding-bottom: 2.4rem;
+    }
+
+    .donation__content {
+        width: 93%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0.75rem;
+    }
+
+    .donation__heading {
+        width: 75%;
+        font-size: 1.563rem;
+        text-align: center;
+        margin: 0 0 1.25rem;
+    }
+
+    .donation__subheading {
+        width: 92%;
+        font-size: 0.938rem;
+        line-height: 160%;
+        letter-spacing: 0;
+    }
+
+    .donation__credit-card {
+        width: 94%;
+    }
+
+    .credit-card__content {
+        padding-bottom: 0.4rem;
+    }
+
+    .credit-card__number {
+        font-size: 0.938rem;
+        line-height: 110%;
+        padding-top: 0.313rem;
+        padding-left: 0.125rem;
+    }
+
+    .donation__legal-information {
+        width: 93%;
+        text-align: justify;
+    }
+
+    .donation__dog {
+        padding: 0;
+        width: 81.25%;
+    }
+
+    .footer__container {
+        width: 93%;
+        flex-direction: column;
+        row-gap: 2.2rem;
+    }
+
+    .footer__contacts {
+        width: 92%;
+    }
+
+    .contacts__title {
+        text-align: center;
+        font-size: 1.563rem;
+        padding-left: 0.875rem;
+    }
+
+    .footer__locations {
+        width: 100%;
+    }
+
+    .locations__title {
+        width: 90%;
+        text-align: center;
+        font-size: 1.563rem;
+        padding-left: 0.938rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .contacts__email {
+        justify-content: flex-end;
+        padding-right: 0.313rem;
+    }
+
+    .contacts__direct-email {
+        margin-bottom: 0.313rem;
+    }
+
+    .contacts__phone {
+        justify-content: flex-end;
+        padding-right: 0.688rem;
+    }
+
+    .locations__boston {
+        margin-bottom: 2.5rem;
+    }
+
+    .boston__nav-icon {
+        padding-top: 0.438rem;
+    }
+
+    .footer_puppy {
+        width: 87.5%;
+    }
 }
 
 /*Media 320 ends*/
+
+/*todo : burger icon*/
+/*todo : change the sizes of sections
+   to be looks more like responsive*/
