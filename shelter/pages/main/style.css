@@ -865,3 +865,56 @@ header {
 }
 
 /*Media 768 ends*/
+
+/*Media 320 starts*/
+
+@media screen and (max-width: 768px) {
+
+    .header__navbar {
+        display: none;
+    }
+
+    .donation__dog  img {
+        max-width: 100%;
+    }
+
+    .footer_puppy img {
+        max-width: 100%;
+    }
+
+    .header__main-link {
+        padding-left: 1.2rem;
+    }
+
+    .not-only__content  {
+        padding: 0;
+        margin: 0;
+        width: 93%;
+        align-items: center;
+    }
+
+    .not-only__heading {
+        font-size: 25px;
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+
+    .not-only__subheading {
+        text-align: center;
+    }
+
+    .not-only__button {
+        margin: 0;
+    }
+
+    .not-only__puppy {
+        padding-top: 6.5rem;
+    }
+
+    .not-only__puppy img{
+       padding-right: 10px;
+    }
+
+}
+
+/*Media 320 ends*/
