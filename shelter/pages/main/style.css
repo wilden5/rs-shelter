@@ -894,7 +894,7 @@ header {
     }
 
     .not-only__heading {
-        font-size: 25px;
+        font-size: 1.563rem;
         letter-spacing: 0.06em;
         text-align: center;
     }
@@ -912,9 +912,89 @@ header {
     }
 
     .not-only__puppy img{
-       padding-right: 10px;
+       padding-right: 0.625rem;
     }
 
+    .about__container {
+        padding-top: 2.625rem;
+        margin-bottom: 2.625rem;
+    }
+
+    .about__content {
+        width: 93%;
+        align-items: center;
+        margin-bottom: 2.625rem;
+    }
+
+    .about__heading {
+        letter-spacing: 0.06em;
+        font-size: 1.563rem;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .about__sub {
+        text-align: justify;
+        width: 90%;
+        padding-left: 0.2rem;
+    }
+
+    .about__subheading-top {
+        margin-bottom: 1.375rem;
+    }
+
+    .about__pets {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about__pets img {
+        max-width: 86.5%;
+    }
+
+    .pets__container {
+        padding-top: 2.625rem;
+    }
+
+    .pets__slider {
+        margin-bottom: 2.5rem;
+    }
+
+    .pets__heading {
+        width: 93%;
+        font-size: 1.563rem;
+        letter-spacing: 0.06em;
+        text-align: center;
+        margin-bottom: 2.625rem;
+    }
+
+    .pets__previous-card {
+        order: 1;
+    }
+
+    .pets__next-card {
+        order: 2;
+    }
+
+    .p-card1 {
+        margin: 0 0 1.25rem;
+    }
+
+    .p-card2 {
+        display: none;
+    }
+
+    .p-card1__pet-name {
+        margin-bottom: 1.7rem;
+    }
+
+    .pets__slider-button {
+        margin: 0;
+    }
+
+    .pets__next-card {
+        margin-left: 0.688rem;
+    }
 }
 
 /*Media 320 ends*/
