@@ -120,6 +120,23 @@ button {
     border-bottom: 0.188rem solid #F1CDB3;
 }
 
+.burger {
+    display: none;
+    border: none;
+    background: none;
+    margin-right: 1.25rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.burger span {
+    display: block;
+    width: 1.688rem;
+    background-color: black;
+    margin: 0.438rem 0;
+    border: 0.125rem solid black;
+}
+
 /*Header styles ends*/
 
 /*Pets styles starts*/
@@ -260,13 +277,13 @@ button {
 
 .footer_puppy img {
     margin-bottom: -0.25rem;
-    padding-right: 40px;
+    padding-right: 2.5rem;
 }
 
 .footer__contacts {
     width: 23.4%;
     padding-top: 1rem;
-    padding-left: 40px;
+    padding-left: 2.5rem;
 }
 
 .contacts__title {
@@ -375,3 +392,219 @@ button {
 }
 
 /*Footer styles ends*/
+
+@media screen and (max-width: 1200px) {
+
+    .pets__navigation {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    /*Header 768 starts*/
+
+    .header__main-link {
+        padding-left: 1.9rem;
+    }
+
+    .navbar__list {
+        margin-right: 2rem;
+    }
+
+    /*Header 768 ends*/
+
+    /*Pets 768 starts*/
+
+    .pets__container {
+        padding-bottom: 4.55rem;
+    }
+
+    .pets__heading {
+        width: 53%;
+        text-align: center;
+        margin-bottom: 1.875rem;
+    }
+
+    .pets__content {
+        gap: 2.5rem;
+        row-gap: 1.875rem;
+        justify-content: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .p-card7, .p-card8 {
+        display: none;
+    }
+
+    .pets__navigation {
+        width: 47.5%;
+    }
+
+    /*Pets 768 ends*/
+
+    /*Footer 768 starts*/
+
+    .footer__container {
+        flex-wrap: wrap;
+        padding-top: 1.875rem;
+        justify-content: space-evenly;
+        row-gap: 3.75rem;
+    }
+
+    .footer__contacts {
+        width: 36.8%;
+        padding: 0 0 0 0.313rem;
+    }
+
+    .footer__locations {
+        width: 39.3%;
+        padding: 0;
+        margin-right: 0.313rem;
+    }
+
+    .footer_puppy {
+        width: 44%;
+    }
+
+    .footer_puppy img {
+        padding-left: 1.188rem;
+        padding-right: 0;
+    }
+
+    /*Footer 768 ends*/
+}
+
+@media screen and (max-width: 767px){
+    .header__navbar {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+/*Media 320 starts*/
+
+@media screen and (max-width: 500px) {
+
+    /*Header 320 starts*/
+
+    .header__main-link {
+        padding-left: 1.2rem;
+    }
+
+    .burger {
+        padding-bottom: 1.875rem;
+    }
+
+    /*Header 320 ends*/
+
+    /*Pets 320 starts*/
+
+    .pets__container {
+        padding-top: 2.625rem;
+        padding-bottom: 2.625rem;
+    }
+
+    .pets__heading {
+        width: 90%;
+        font-size: 1.563rem;
+        text-align: center;
+        text-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+        margin-bottom: 2.625rem;
+    }
+
+    .p-card4, .p-card5, .p-card6 {
+        display: none;
+    }
+
+    .pets__navigation {
+        width: 93.5%;
+        padding: 0;
+    }
+
+    .pag-button {
+        margin: 0;
+        padding: 0;
+    }
+
+    .pag-ua,
+    .pets__paginator-next {
+        margin-right: 0.313rem;
+    }
+
+    .pets__paginator-active {
+        margin-right: 0.438rem;
+    }
+
+    /*Pets 320 ends*/
+
+    /*Footer 320 starts*/
+
+    .footer__container {
+        width: 93%;
+        flex-direction: column;
+        row-gap: 2.2rem;
+    }
+
+    .footer__contacts {
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contacts__title {
+        text-align: center;
+        font-size: 1.563rem;
+        padding-left: 0.875rem;
+    }
+
+    .footer__locations {
+        width: 100%;
+    }
+
+    .locations__title {
+        width: 90%;
+        text-align: center;
+        font-size: 1.563rem;
+        padding-left: 0.938rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .contacts__email {
+        justify-content: flex-end;
+        padding-right: 0.313rem;
+        padding-left: 1.125rem;
+    }
+
+    .contacts__direct-email {
+        margin-bottom: 0.313rem;
+    }
+
+    .contacts__phone {
+        justify-content: flex-end;
+        padding-right: 0.688rem;
+        padding-left: 1.438rem;
+    }
+
+    .locations__boston {
+        margin-bottom: 2.5rem;
+    }
+
+    .boston__nav-icon {
+        padding-top: 0.438rem;
+    }
+
+    .footer_puppy {
+        width: 87.5%;
+    }
+
+    .footer_puppy img {
+        max-width: 100%;
+    }
+
+    /*Footer 320 ends*/
+}
