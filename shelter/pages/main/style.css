@@ -874,6 +874,87 @@ header {
     }
 }
 
+@media screen and (max-width: 750px){
+    .not-only__heading {
+        font-size: 2.188rem;
+        letter-spacing: 0.06em;
+    }
+
+    .about__content {
+        width: 75%;
+    }
+
+    .donation__content {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .p-card2 {
+        display: none;
+    }
+
+    .p-card1 {
+        margin-left: 1.875rem;
+    }
+
+    .donation__content {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .not-only__heading {
+        font-size: 1.875rem;
+        letter-spacing: 0.06em;
+    }
+
+    .about__content {
+        width: 85%;
+    }
+
+    .help__heading {
+        font-size: 1.875rem;
+    }
+
+    .donation__heading {
+        font-size: 1.875rem;
+    }
+
+    .donation__content {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .pets__previous-card {
+        order: 1;
+    }
+
+    .pets__next-card {
+        order: 2;
+    }
+
+    .p-card1 {
+        margin-left: 5.8rem;
+        margin-right: 5.8rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .pets__heading {
+        font-size: 1.875rem;
+    }
+
+    .donation__heading {
+        font-size: 1.688rem;
+    }
+
+    .donation__content {
+        width: 85%;
+        margin-bottom: 0.75rem;
+    }
+}
+
 @media screen and (max-width: 500px) {
 
     .header__navbar {
@@ -983,7 +1064,7 @@ header {
     }
 
     .p-card1 {
-        margin: 0 0 1.25rem;
+        margin: 0 5.6rem 1.25rem;
     }
 
     .p-card2 {
@@ -1052,7 +1133,6 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 0.75rem;
     }
 
     .donation__heading {
@@ -1102,6 +1182,9 @@ header {
 
     .footer__contacts {
         width: 92%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .contacts__title {
@@ -1125,6 +1208,7 @@ header {
     .contacts__email {
         justify-content: flex-end;
         padding-right: 0.313rem;
+        padding-left: 1.125rem;
     }
 
     .contacts__direct-email {
@@ -1134,6 +1218,7 @@ header {
     .contacts__phone {
         justify-content: flex-end;
         padding-right: 0.688rem;
+        padding-left: 1.438rem;
     }
 
     .locations__boston {
@@ -1150,7 +1235,3 @@ header {
 }
 
 /*Media 320 ends*/
-
-/*todo : burger icon*/
-/*todo : change the sizes of sections
-   to be looks more like responsive*/
