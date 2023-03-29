@@ -399,7 +399,7 @@ button {
         display: flex;
         justify-content: center;
         padding: 0;
-        gap: 4px;
+        gap: 0.25rem;
     }
 }
 
@@ -493,7 +493,7 @@ button {
 
     .pets__heading {
         width: 65%;
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .pets__navigation {
@@ -506,7 +506,7 @@ button {
 
     .pets__heading {
         width: 75%;
-        font-size: 27px;
+        font-size: 1.688rem;
     }
 
 }
