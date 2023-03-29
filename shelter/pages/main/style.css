@@ -138,6 +138,23 @@ header {
     border-bottom: 0.188rem solid #F1CDB3;
 }
 
+.burger {
+    display: none;
+    border: none;
+    background: none;
+    margin-right: 1.25rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.burger span {
+    display: block;
+    width: 1.688rem;
+    background-color: #F1CDB3;
+    margin: 0.438rem 0;
+    border: 0.125rem solid #F1CDB3;
+}
+
 /*Header styles ends*/
 
 /*Not-only styles starts*/
@@ -871,6 +888,10 @@ header {
 @media screen and (max-width: 767px){
     .header__navbar {
         display: none;
+    }
+
+    .burger {
+        display: block;
     }
 }
 
