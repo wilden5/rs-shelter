@@ -80,7 +80,7 @@ header {
 }
 
 .header__main-link {
-    padding-left: 40px;
+    padding-left: 2.5rem;
 }
 
 .header__logo-container {
@@ -115,7 +115,7 @@ header {
     list-style-type: none;
     gap: 2.25rem;
     padding-bottom: 0.188rem;
-    padding-right: 40px;
+    padding-right: 2.5rem;
 }
 
 .navbar__item {
@@ -136,6 +136,23 @@ header {
 .nav-active {
     color: #FAFAFA;
     border-bottom: 0.188rem solid #F1CDB3;
+}
+
+.burger {
+    display: none;
+    border: none;
+    background: none;
+    margin-right: 1.25rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.burger span {
+    display: block;
+    width: 1.688rem;
+    background-color: #F1CDB3;
+    margin: 0.438rem 0;
+    border: 0.125rem solid #F1CDB3;
 }
 
 /*Header styles ends*/
@@ -159,8 +176,8 @@ header {
     flex-direction: column;
     align-items: flex-start;
     width: 37%;
-    padding-left: 40px;
-    margin-right: 28px;
+    padding-left: 2.5rem;
+    margin-right: 1.75rem;
 }
 
 .not-only__heading {
@@ -213,6 +230,10 @@ header {
     display: flex;
 }
 
+.not-only__puppy img {
+    max-width: 100%;
+}
+
 /*Not-only styles ends*/
 
 /*About styles starts*/
@@ -241,7 +262,7 @@ header {
     color: #545454;
     margin-bottom: 1.563rem;
     padding-top: 2.188rem;
-    padding-left: 2px;
+    padding-left: 0.125rem;
 }
 
 .about__subheading-top {
@@ -255,8 +276,8 @@ header {
     font-size: 0.938rem;
     line-height: 160%;
     color: #4C4C4C;
-    padding-right: 5px;
-    padding-left: 2px;
+    padding-right: 0.313rem;
+    padding-left: 0.125rem;
 }
 
 .about__pets {
@@ -315,6 +336,7 @@ header {
     margin-bottom: 3.625rem;
     gap: 3.313rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .pets__card {
@@ -450,7 +472,7 @@ header {
 }
 
 .donation__dog {
-    padding-top: 7px;
+    padding-top: 0.438rem;
 }
 
 .donation__container {
@@ -460,7 +482,7 @@ header {
     margin: 0 auto;
     padding-top: 5rem;
     padding-bottom: 6.25rem;
-    gap: 31px;
+    gap: 1.938rem;
 }
 
 .donation__content {
@@ -553,13 +575,13 @@ header {
 
 .footer_puppy img {
     margin-bottom: -0.25rem;
-    padding-right: 40px;
+    padding-right: 2.5rem;
 }
 
 .footer__contacts {
     width: 23.4%;
     padding-top: 1rem;
-    padding-left: 40px;
+    padding-left: 2.5rem;
 }
 
 .contacts__title {
@@ -673,3 +695,564 @@ header {
 }
 
 /*Footer styles ends*/
+
+/*Media 768 starts*/
+
+@media screen and (max-width: 1200px) {
+
+    .p-card3 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+
+    /*Header 768 starts*/
+    .header__main-link {
+        padding-left: 2rem;
+    }
+
+    .navbar__list {
+        gap: 2.188rem;
+        padding-right: 2rem;
+    }
+
+    /*Header 768 ends*/
+
+    /*Not only 768 starts*/
+
+    .not-only__container {
+        flex-direction: column;
+        margin-top: 3.125rem;
+    }
+
+    .not-only__content {
+        width: 61%;
+    }
+
+    .not-only__button {
+        align-self: center;
+        margin-right: 0.875rem;
+    }
+
+    .not-only__puppy {
+        justify-content: flex-end;
+        padding-top: 6.25rem;
+    }
+
+    .not-only__puppy img {
+        max-width: 81.4%;
+    }
+
+    /*Not only 768 ends*/
+
+    /*About 768 starts*/
+
+    .about__container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+    }
+
+    .about__pets {
+        order: 2;
+        margin-right: 0;
+        padding-top: 0;
+    }
+
+    .about__content {
+        width: 57%;
+        margin-bottom: 5rem;
+    }
+
+    .about__heading {
+        padding-top: 0;
+    }
+
+    /*About 768 ends*/
+
+    /*Pets 768 starts*/
+
+    .pets__heading {
+        width: 53%;
+    }
+
+    .pets__slider {
+        gap: 0;
+        justify-content: space-evenly;
+    }
+
+    .p-card1 {
+        margin-right: 1.875rem;
+    }
+
+    .p-card2 {
+        margin-right: 0;
+    }
+
+    .pets__previous-card {
+        margin-left: 1.25rem;
+        margin-bottom: 0.313rem;
+    }
+
+    .pets__next-card {
+        margin-right: 1.25rem;
+        margin-bottom: 0.313rem;
+    }
+
+    .pe-name {
+        margin-bottom: 1.6rem;
+    }
+
+    /*Pets 768 ends*/
+
+    /*Help 768 starts*/
+
+    .help__heading {
+        width: 41%;
+    }
+
+    .help__list {
+        gap: 0;
+        justify-content: space-between;
+        row-gap: 3.563rem;
+        width: 82%;
+    }
+
+    .help__item {
+        width: 27%;
+    }
+
+    /*Help 768 ends*/
+
+    /*Donation 768 starts*/
+
+    .donation__container {
+        flex-direction: column;
+        padding-bottom: 6rem;
+    }
+
+    .donation__dog {
+        order: 2;
+        padding-top: 1.8rem;
+    }
+
+    .donation__content {
+        width: 49.5%;
+    }
+
+    .donation__subheading {
+        margin-bottom: 1.25rem;
+    }
+
+    /*Donation 768 ends*/
+
+    /*Footer 768 starts*/
+
+    .footer__container {
+        flex-wrap: wrap;
+        padding-top: 1.875rem;
+        justify-content: space-evenly;
+        row-gap: 3.75rem;
+    }
+
+    .footer__contacts {
+        width: 36.8%;
+        padding: 0 0 0 0.313rem;
+    }
+
+    .footer__locations {
+        width: 39.3%;
+        padding: 0;
+        margin-right: 0.313rem;
+    }
+
+    .footer_puppy {
+        width: 44%;
+    }
+
+    .footer_puppy img {
+        padding-left: 1.188rem;
+        padding-right: 0;
+    }
+
+    /*Footer 768 ends*/
+
+}
+
+/*Media 768 ends*/
+
+/*Media 320 starts*/
+
+@media screen and (max-width: 767px){
+    .header__navbar {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .not-only__heading {
+        font-size: 2.188rem;
+        letter-spacing: 0.06em;
+    }
+
+    .about__content {
+        width: 75%;
+    }
+
+    .donation__content {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .p-card2 {
+        display: none;
+    }
+
+    .p-card1 {
+        margin-left: 1.875rem;
+    }
+
+    .donation__content {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .not-only__heading {
+        font-size: 1.875rem;
+        letter-spacing: 0.06em;
+    }
+
+    .about__content {
+        width: 85%;
+    }
+
+    .help__heading {
+        font-size: 1.875rem;
+    }
+
+    .donation__heading {
+        font-size: 1.875rem;
+    }
+
+    .donation__content {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .pets__previous-card {
+        order: 1;
+    }
+
+    .pets__next-card {
+        order: 2;
+    }
+
+    .p-card1 {
+        margin-left: 5.8rem;
+        margin-right: 5.8rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .pets__heading {
+        font-size: 1.875rem;
+    }
+
+    .donation__heading {
+        font-size: 1.688rem;
+    }
+
+    .donation__content {
+        width: 85%;
+        margin-bottom: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .header__navbar {
+        display: none;
+    }
+
+    .donation__dog  img {
+        max-width: 100%;
+    }
+
+    .footer_puppy img {
+        max-width: 100%;
+    }
+
+    .header__main-link {
+        padding-left: 1.2rem;
+    }
+
+    .not-only__content  {
+        padding: 0;
+        margin: 0;
+        width: 93%;
+        align-items: center;
+    }
+
+    .not-only__heading {
+        font-size: 1.563rem;
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+
+    .not-only__subheading {
+        text-align: center;
+    }
+
+    .not-only__button {
+        margin: 0;
+    }
+
+    .not-only__puppy {
+        padding-top: 6.5rem;
+    }
+
+    .not-only__puppy img{
+       padding-right: 0.625rem;
+    }
+
+    .about__container {
+        padding-top: 2.625rem;
+        margin-bottom: 2.625rem;
+    }
+
+    .about__content {
+        width: 93%;
+        align-items: center;
+        margin-bottom: 2.625rem;
+    }
+
+    .about__heading {
+        letter-spacing: 0.06em;
+        font-size: 1.563rem;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .about__sub {
+        text-align: justify;
+        width: 90%;
+        padding-left: 0.2rem;
+    }
+
+    .about__subheading-top {
+        margin-bottom: 1.375rem;
+    }
+
+    .about__pets {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about__pets img {
+        max-width: 86.5%;
+    }
+
+    .pets__container {
+        padding-top: 2.625rem;
+    }
+
+    .pets__slider {
+        margin-bottom: 2.5rem;
+    }
+
+    .pets__heading {
+        width: 93%;
+        font-size: 1.563rem;
+        letter-spacing: 0.06em;
+        text-align: center;
+        margin-bottom: 2.625rem;
+    }
+
+    .pets__previous-card {
+        order: 1;
+    }
+
+    .pets__next-card {
+        order: 2;
+    }
+
+    .p-card1 {
+        margin: 0 5.6rem 1.25rem;
+    }
+
+    .p-card2 {
+        display: none;
+    }
+
+    .p-card1__pet-name {
+        margin-bottom: 1.7rem;
+    }
+
+    .pets__slider-button {
+        margin: 0;
+    }
+
+    .pets__next-card {
+        margin-left: 0.688rem;
+    }
+
+    .pets__button {
+        margin-bottom: 2.625rem;
+    }
+
+    .help__container {
+        padding-top: 2.625rem;
+        margin-bottom: 2.625rem;
+    }
+
+    .help__heading {
+        width: 70%;
+        font-size: 1.563rem;
+        letter-spacing: 0.06em;
+        text-align: center;
+        margin-bottom: 2.625rem;
+    }
+
+    .help__list {
+        width: 90.62%;
+        row-gap: 1.9rem;
+    }
+
+    .help__item {
+        width: 44.82%;
+    }
+
+    .help__text {
+        font-size: 0.938rem;
+        line-height: 110%;
+        padding-top: 1rem;
+    }
+
+    .help__icon {
+        padding-left: 0.625rem;
+    }
+
+    .help__icon img {
+        width: 83.4%;
+    }
+
+    .donation__container {
+        padding-top: 2.625rem;
+        padding-bottom: 2.4rem;
+    }
+
+    .donation__content {
+        width: 93%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donation__heading {
+        width: 75%;
+        font-size: 1.563rem;
+        text-align: center;
+        margin: 0 0 1.25rem;
+    }
+
+    .donation__subheading {
+        width: 92%;
+        font-size: 0.938rem;
+        line-height: 160%;
+        letter-spacing: 0;
+    }
+
+    .donation__credit-card {
+        width: 94%;
+    }
+
+    .credit-card__content {
+        padding-bottom: 0.4rem;
+    }
+
+    .credit-card__number {
+        font-size: 0.938rem;
+        line-height: 110%;
+        padding-top: 0.313rem;
+        padding-left: 0.125rem;
+    }
+
+    .donation__legal-information {
+        width: 93%;
+        text-align: justify;
+    }
+
+    .donation__dog {
+        padding: 0;
+        width: 81.25%;
+    }
+
+    .footer__container {
+        width: 93%;
+        flex-direction: column;
+        row-gap: 2.2rem;
+    }
+
+    .footer__contacts {
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contacts__title {
+        text-align: center;
+        font-size: 1.563rem;
+        padding-left: 0.875rem;
+    }
+
+    .footer__locations {
+        width: 100%;
+    }
+
+    .locations__title {
+        width: 90%;
+        text-align: center;
+        font-size: 1.563rem;
+        padding-left: 0.938rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .contacts__email {
+        justify-content: flex-end;
+        padding-right: 0.313rem;
+        padding-left: 1.125rem;
+    }
+
+    .contacts__direct-email {
+        margin-bottom: 0.313rem;
+    }
+
+    .contacts__phone {
+        justify-content: flex-end;
+        padding-right: 0.688rem;
+        padding-left: 1.438rem;
+    }
+
+    .locations__boston {
+        margin-bottom: 2.5rem;
+    }
+
+    .boston__nav-icon {
+        padding-top: 0.438rem;
+    }
+
+    .footer_puppy {
+        width: 87.5%;
+    }
+}
+
+/*Media 320 ends*/
