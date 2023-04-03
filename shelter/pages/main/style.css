@@ -33,6 +33,10 @@ body {
     margin: 0;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 h1, h2, h3, h4, p, ul, span {
     margin: 0;
     padding: 0;
@@ -893,6 +897,9 @@ header {
 
 @media screen and (max-width: 767px){
     .header__navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: fixed;
         background-color: #292929;
         opacity: 0;
@@ -901,6 +908,7 @@ header {
         top: 0;
         right: -100%;
         transition: opacity .5s ease, right .5s ease;
+        z-index: 2;
     }
 
     .header-active {
@@ -910,7 +918,38 @@ header {
 
     .burger {
         display: block;
+        z-index: 3;
+    }
+
+    .nav-active:visited {
+        color: #FAFAFA;
+    }
+
+    .navbar__list {
+        flex-direction: column;
+        align-items: center;
+        width: 76%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar__link {
+        font-size: 32px;
+    }
+
+    .header__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(41, 41, 41, 0.6);
         z-index: 1;
+        display: none;
+    }
+
+    .header-active ~ .header__overlay{
+        display: block;
     }
 }
 
