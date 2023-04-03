@@ -145,6 +145,7 @@ header {
     margin-right: 1.25rem;
     cursor: pointer;
     padding: 0;
+    transition: ease all 1s;
 }
 
 .burger span {
@@ -153,6 +154,11 @@ header {
     background-color: #F1CDB3;
     margin: 0.438rem 0;
     border: 0.125rem solid #F1CDB3;
+}
+
+.burger-opened {
+    transform: rotate(90deg);
+    transition: ease all 1s;
 }
 
 /*Header styles ends*/
@@ -887,11 +893,24 @@ header {
 
 @media screen and (max-width: 767px){
     .header__navbar {
-        display: none;
+        position: fixed;
+        background-color: #292929;
+        opacity: 0;
+        height: 100%;
+        width: 320px;
+        top: 0;
+        right: -100%;
+        transition: opacity .5s ease, right .5s ease;
+    }
+
+    .header-active {
+        right: 0;
+        opacity: 1;
     }
 
     .burger {
         display: block;
+        z-index: 1;
     }
 }
 
@@ -977,10 +996,6 @@ header {
 }
 
 @media screen and (max-width: 500px) {
-
-    .header__navbar {
-        display: none;
-    }
 
     .donation__dog  img {
         max-width: 100%;
@@ -1253,6 +1268,7 @@ header {
     .footer_puppy {
         width: 87.5%;
     }
+
 }
 
 /*Media 320 ends*/
