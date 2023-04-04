@@ -2,9 +2,9 @@
 
 const burgerIcon = document.querySelector('.burger');
 const headerNavbar = document.querySelector('.header__navbar');
-const main = document.querySelector('.main-page');
 const body = document.querySelector('body');
 const navbarLink = document.querySelectorAll('.navbar__link');
+const overlayMain = document.querySelector('.header__overlay');
 
 function toggleBurgerAndHeader() {
     body.classList.toggle('no-scroll');
@@ -16,7 +16,7 @@ burgerIcon.addEventListener('click', () => {
     toggleBurgerAndHeader();
 })
 
-main.addEventListener('click', () => {
+overlayMain.addEventListener('click', () => {
     if (burgerIcon.classList.contains('burger-opened')) {
         toggleBurgerAndHeader();
     }
