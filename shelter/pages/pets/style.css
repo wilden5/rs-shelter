@@ -37,6 +37,10 @@ body {
     margin: 0;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 h1, h2, h3, h4, p, ul, span {
     margin: 0;
     padding: 0;
@@ -127,6 +131,7 @@ button {
     margin-right: 1.25rem;
     cursor: pointer;
     padding: 0;
+    transition: ease all 1s;
 }
 
 .burger span {
@@ -135,6 +140,11 @@ button {
     background-color: black;
     margin: 0.438rem 0;
     border: 0.125rem solid black;
+}
+
+.burger-opened {
+    transform: rotate(90deg);
+    transition: ease all 1s;
 }
 
 /*Header styles ends*/
@@ -480,12 +490,68 @@ button {
 
 @media screen and (max-width: 767px){
     .header__navbar {
-        display: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: #292929;
+        opacity: 0;
+        height: 100%;
+        width: 320px;
+        top: 0;
+        right: -100%;
+        transition: opacity .5s ease, right .5s ease;
+        z-index: 2;
+    }
+
+    .header-active {
+        right: 0;
+        opacity: 1;
     }
 
     .burger {
         display: block;
-        padding-bottom: 1.875rem;
+        margin-bottom: 1.875rem;
+        z-index: 3;
+    }
+
+    .navbar__link {
+        color: #CDCDCD;
+    }
+
+    .nav-active {
+        color: #FAFAFA;
+    }
+
+    .nav-active:visited {
+        color: #FAFAFA;
+    }
+
+    .navbar__list {
+        flex-direction: column;
+        align-items: center;
+        width: 76%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar__link {
+        font-size: 32px;
+    }
+
+    .header__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(41, 41, 41, 0.6);
+        z-index: 1;
+        display: none;
+    }
+
+    .header-active ~ .header__overlay{
+        display: block;
     }
 }
 
@@ -528,7 +594,7 @@ button {
     }
 
     .burger {
-        padding-bottom: 1.875rem;
+        /*margin-bottom: 1.875rem;*/
     }
 
     /*Header 320 ends*/
