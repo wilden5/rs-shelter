@@ -1311,3 +1311,44 @@ header {
 }
 
 /*Media 320 ends*/
+
+.slider-wrapper {
+    width: 885px;
+    overflow: hidden;
+}
+
+.pets__slider {
+    flex-wrap: nowrap;
+    position: relative;
+    /*left: -885px; remove-justify content*/
+}
+
+.sl-items {
+    display: flex;
+}
+
+@keyframes move-right {
+    from {left: 0;}
+    to {left: -885px;}
+}
+
+.transition-right {
+    animation-name: move-right;
+    animation-duration: 5s;
+}
+
+@keyframes move-left {
+    from {left: 0;}
+    to {left: 885px;}
+}
+
+.transition-left {
+    animation-name: move-left;
+    animation-duration: 5s;
+}
+
+
+/*
+.hiddenn {
+    display: none;
+}*/
