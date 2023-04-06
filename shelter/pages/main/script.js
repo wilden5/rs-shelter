@@ -67,6 +67,9 @@ function generateActivePetsItems() {
     });
 }
 
+//todo: добавь сохранение предыдущего одного! состояния
+//todo: фикс хедера на мэин странице
+//todo: фикс слайдера на 768px и 320px, из за добавления 3-й карточки оно съедает одну с экрана
 function generateSidePetsItems(side) {
     if (side === 'left') {
         let leftIndices = [];
@@ -104,6 +107,19 @@ function generateSidePetsItems(side) {
         leftActiveIndices = leftIndices;
         leftIndices.forEach(index => {
             LEFT_PETS_CONTAINER.appendChild(generateRandomPetCard(index));
+        })
+    } else {
+        RIGHT_PETS_CONTAINER.innerHTML = '';
+        let rightIndices = [];
+        while (rightIndices.length < 3) {
+            let randomIndex = Math.floor(Math.random() * fetchedPetsObject.length);
+            if (!rightActiveIndices.includes(randomIndex) && !rightIndices.includes(randomIndex)) {
+                rightIndices.push(randomIndex);
+            }
+        }
+        rightActiveIndices = rightIndices;
+        rightIndices.forEach(index => {
+            RIGHT_PETS_CONTAINER.appendChild(generateRandomPetCard(index));
         })
     }
 }
@@ -151,12 +167,11 @@ PETS_CAROUSEL.addEventListener('animationend', (aEvent) => {
         PETS_CAROUSEL.classList.remove('transition-left');
         document.querySelector('.item-active').innerHTML = LEFT_PETS_CONTAINER.innerHTML;
         generateSidePetsItems('additional-left');
-
-    } /*else {
+    } else {
         PETS_CAROUSEL.classList.remove('transition-right');
-        changedItem = itemRight;
-        document.querySelector('.item-active').innerHTML = itemRight.innerHTML;
-    }*/
+        document.querySelector('.item-active').innerHTML = RIGHT_PETS_CONTAINER.innerHTML;
+        generateSidePetsItems('additional-right');
+    }
 
     CAROUSEL_BUTTON_LEFT.addEventListener('click', moveLeft);
     CAROUSEL_BUTTON_RIGHT.addEventListener('click', moveRight);
