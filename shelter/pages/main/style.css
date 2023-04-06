@@ -165,6 +165,10 @@ header {
     transition: ease all 1s;
 }
 
+.header__overlay {
+    display: none;
+}
+
 /*Header styles ends*/
 
 /*Not-only styles starts*/

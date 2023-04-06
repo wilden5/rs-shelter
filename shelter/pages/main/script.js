@@ -68,7 +68,6 @@ function generateActivePetsItems() {
 }
 
 //todo: добавь сохранение предыдущего одного! состояния
-//todo: фикс хедера на мэин странице
 //todo: фикс слайдера на 768px и 320px, из за добавления 3-й карточки оно съедает одну с экрана
 function generateSidePetsItems(side) {
     if (side === 'left') {

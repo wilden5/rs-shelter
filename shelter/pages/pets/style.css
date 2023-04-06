@@ -147,6 +147,10 @@ button {
     transition: ease all 1s;
 }
 
+.header__overlay {
+    display: none;
+}
+
 /*Header styles ends*/
 
 /*Pets styles starts*/
