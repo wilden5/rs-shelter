@@ -414,7 +414,7 @@ header {
     border: none;
     width: 16.313rem;
     height: 3.25rem;
-    margin-bottom: 6.25rem;
+    margin-bottom: 6.4rem;
 }
 
 .pets__button a {
@@ -729,9 +729,7 @@ header {
     }
 
     /*Header 768 ends*/
-
     /*Not only 768 starts*/
-
     .not-only__container {
         flex-direction: column;
         margin-top: 3.125rem;
@@ -756,9 +754,7 @@ header {
     }
 
     /*Not only 768 ends*/
-
     /*About 768 starts*/
-
     .about__container {
         flex-direction: column;
         align-items: center;
@@ -781,9 +777,7 @@ header {
     }
 
     /*About 768 ends*/
-
     /*Pets 768 starts*/
-
     .pets__heading {
         width: 53%;
     }
@@ -816,9 +810,7 @@ header {
     }
 
     /*Pets 768 ends*/
-
     /*Help 768 starts*/
-
     .help__heading {
         width: 41%;
     }
@@ -835,9 +827,7 @@ header {
     }
 
     /*Help 768 ends*/
-
     /*Donation 768 starts*/
-
     .donation__container {
         flex-direction: column;
         padding-bottom: 6rem;
@@ -857,9 +847,7 @@ header {
     }
 
     /*Donation 768 ends*/
-
     /*Footer 768 starts*/
-
     .footer__container {
         flex-wrap: wrap;
         padding-top: 1.875rem;
@@ -895,7 +883,7 @@ header {
 
 /*Media 320 starts*/
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     .header__navbar {
         display: flex;
         align-items: center;
@@ -948,12 +936,12 @@ header {
         display: none;
     }
 
-    .header-active ~ .header__overlay{
+    .header-active ~ .header__overlay {
         display: block;
     }
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 750px) {
     .not-only__heading {
         font-size: 2.188rem;
         letter-spacing: 0.06em;
@@ -982,7 +970,7 @@ header {
     }
 }
 
-@media screen and (max-width: 670px){
+@media screen and (max-width: 670px) {
     .not-only__heading {
         font-size: 1.875rem;
         letter-spacing: 0.06em;
@@ -1036,7 +1024,7 @@ header {
 
 @media screen and (max-width: 500px) {
 
-    .donation__dog  img {
+    .donation__dog img {
         max-width: 100%;
     }
 
@@ -1048,7 +1036,7 @@ header {
         padding-left: 1.2rem;
     }
 
-    .not-only__content  {
+    .not-only__content {
         padding: 0;
         margin: 0;
         width: 93%;
@@ -1073,8 +1061,8 @@ header {
         padding-top: 6.5rem;
     }
 
-    .not-only__puppy img{
-       padding-right: 0.625rem;
+    .not-only__puppy img {
+        padding-right: 0.625rem;
     }
 
     .about__container {
@@ -1313,8 +1301,18 @@ header {
 /*Media 320 ends*/
 
 .slider-wrapper {
-    width: 885px;
+    width: 992px;
     overflow: hidden;
+}
+
+.pets__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pets__next-card {
+    order: 2;
 }
 
 .pets__slider {
@@ -1323,13 +1321,29 @@ header {
     /*left: -885px; remove-justify content*/
 }
 
+.pets__slider-button {
+    margin-bottom: 58px;
+}
+
+.item-active, .item-right, .item-left {
+    gap: 54px;
+}
+
+.pets__card:last-child {
+    margin-right: 0;
+}
+
 .sl-items {
     display: flex;
 }
 
 @keyframes move-right {
-    from {left: 0;}
-    to {left: -885px;}
+    from {
+        left: 0;
+    }
+    to {
+        left: -1050px;
+    }
 }
 
 .transition-right {
@@ -1338,8 +1352,12 @@ header {
 }
 
 @keyframes move-left {
-    from {left: 0;}
-    to {left: 885px;}
+    from {
+        left: 0;
+    }
+    to {
+        left: 1050px;
+    }
 }
 
 .transition-left {
@@ -1347,8 +1365,85 @@ header {
     animation-duration: 5s;
 }
 
+@media screen and (max-width: 1050px) {
 
-/*
-.hiddenn {
-    display: none;
-}*/
+    .slider-wrapper {
+        width: 580px;
+        overflow: hidden;
+    }
+
+    .pets__slider {
+        width: 290px;
+    }
+
+    .item-active, .item-right, .item-left {
+        gap: 0;
+    }
+
+    .pets__card {
+        margin-right: 40px;
+    }
+
+    @keyframes move-right {
+        from {
+            left: 0;
+        }
+        to {
+            left: -585px;
+        }
+    }
+
+    @keyframes move-left {
+        from {
+            left: 0;
+        }
+        to {
+            left: 585px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .pets__wrapper {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .pets__card {
+        margin: 0 0 0 30px;
+    }
+
+    .pets__slider {
+        margin-bottom: 0;
+    }
+
+    .pets__slider-button {
+        margin: 0 0 43px;
+    }
+
+    .pets__next-card {
+        margin-right: 24px;
+    }
+
+    .pets__previous-card {
+        margin-left: 22px;
+    }
+
+    @keyframes move-right {
+        from {
+            left: 0;
+        }
+        to {
+            left: -300px;
+        }
+    }
+
+    @keyframes move-left {
+        from {
+            left: 0;
+        }
+        to {
+            left: 300px;
+        }
+    }
+}
