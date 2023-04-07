@@ -234,9 +234,10 @@ button {
 }
 
 .pets__navigation {
+    display: flex;
+    justify-content: space-evenly;
     width: 28.5%;
     align-self: center;
-    padding-left: 1.563rem;
 }
 
 .pag-button {
@@ -252,14 +253,15 @@ button {
     border-radius: 6.25rem;
     width: 3.25rem;
     height: 3.25rem;
-    margin-right: 1rem;
 }
 
 .pag-button:last-child {
     margin-right: 0;
 }
 
-.pag-ua {
+.pets__paginator-double-prev,
+.pets__paginator-prev,
+.pets__paginator-double-next {
     border: 0.125rem solid #CDCDCD;
     color: #CDCDCD;
     cursor: auto;
@@ -267,10 +269,19 @@ button {
 
 .pets__paginator-active {
     background: #F1CDB3;
+    cursor: auto;
+}
+
+.pag-disabled {
+    border: 0.125rem solid #CDCDCD;
+    color: #CDCDCD;
+    cursor: auto;
 }
 
 .pag-a {
     border: 0.125rem solid #F1CDB3;
+    color: #292929;
+    cursor: pointer;
 }
 
 /*Pets styles ends*/
@@ -630,11 +641,6 @@ button {
     .pag-button {
         margin: 0;
         padding: 0;
-    }
-
-    .pag-ua,
-    .pets__paginator-next {
-        margin-right: 0.313rem;
     }
 
     .pets__paginator-active {
