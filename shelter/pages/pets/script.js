@@ -126,6 +126,18 @@ async function main() {
         checkButtonsStatus();
     })
 
+    PAGINATION_FIRST_PAGE_BUTTON.addEventListener('click', () => {
+        PETS_CONTENT_CONTAINER.innerHTML = '';
+        createInitialArray(subArrays[0]);
+        GLOBAL_PAGE_NUMBER = 1;
+        PETS_PAGE_PAGINATION_NUMBER.innerText = GLOBAL_PAGE_NUMBER;
+        if (GLOBAL_PAGE_NUMBER === 1) {
+            PAGINATION_FIRST_PAGE_BUTTON.classList.remove('pag-a');
+            PAGINATION_PREV_BUTTON.classList.remove('pag-a');
+        }
+        checkButtonsStatus();
+    })
+
     function checkButtonsStatus() {
         if (GLOBAL_PAGE_NUMBER === 1) {
             PAGINATION_PREV_BUTTON.classList.add('pag-disabled');
