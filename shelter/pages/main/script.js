@@ -138,6 +138,7 @@ function generateRandomPetCard(index) {
     const cardButton = document.createElement('button');
     cardButton.classList.add('pe-button', 'p-card1__button');
     cardButton.innerHTML = 'Learn more';
+    cardButton.setAttribute('data-path', fetchedPetsObject[index].name.toLowerCase());
 
     cardBody.appendChild(cardPicture);
     cardBody.appendChild(cardName);
@@ -176,3 +177,37 @@ PETS_CAROUSEL.addEventListener('animationend', (aEvent) => {
     CAROUSEL_BUTTON_RIGHT.addEventListener('click', moveRight);
 })
 /*Carousel handler ends*/
+
+
+/*POP_UP handler starts*/
+
+window.addEventListener('load', () => {
+    const LEARN_MORE_BUTTONS = document.querySelectorAll('.pe-button');
+    const MODAL_OVERLAY = document.querySelector('.modal__overlay');
+    const ALL_MODAL_WINDOWS = document.querySelectorAll('.modal');
+
+    LEARN_MORE_BUTTONS.forEach((button) => {
+        button.addEventListener('click', (e) => {
+            let path = e.currentTarget.getAttribute('data-path');
+
+            ALL_MODAL_WINDOWS.forEach((el) => {
+                el.classList.remove('modal--visible');
+            });
+
+            document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
+            MODAL_OVERLAY.classList.add('modal-overlay--visible');
+        });
+    });
+
+    MODAL_OVERLAY.addEventListener('click', (e) => {
+        if (e.target === MODAL_OVERLAY) {
+            MODAL_OVERLAY.classList.remove('modal-overlay--visible');
+            ALL_MODAL_WINDOWS.forEach((el) => {
+                el.classList.remove('modal--visible');
+            });
+        }
+    });
+});
+
+
+/*POP_UP handler ends*/
