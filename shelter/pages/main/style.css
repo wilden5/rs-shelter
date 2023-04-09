@@ -1474,8 +1474,8 @@ header {
 .modal {
     position: relative;
     background-color: #FFFFFF;
-    width: 900px;
-    height: 500px;
+    max-width: 900px;
+    max-height: 500px;
     align-items: center;
     justify-content: center;
     display: none;
@@ -1598,4 +1598,48 @@ header {
 
 .petModal {
     display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+    .modal {
+        max-width: 630px;
+        max-height: 350px;
+    }
+
+    .modal__sub-header,
+    .modal__description {
+        margin-bottom: 20px;
+    }
+
+    .modal__description {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .modal {
+        max-width: 240px;
+        max-height: 341px;
+    }
+
+    .modal__sub-header,
+    .modal__description {
+        margin-bottom: 20px;
+    }
+
+    .modal__description {
+        font-size: 13px;
+    }
+
+    .modal__picture {
+        display: none;
+    }
+
+    .modal-content-wrapper {
+        width: 100%;
+    }
+
+    .modal__sub-header {
+        font-size: 18px;
+    }
 }
