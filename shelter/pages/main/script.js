@@ -185,7 +185,6 @@ window.addEventListener('load', () => {
     const LEARN_MORE_BUTTONS = document.querySelectorAll('.pe-button');
     const MODAL_OVERLAY = document.querySelector('.modal__overlay');
     const ALL_MODAL_WINDOWS = document.querySelectorAll('.modal');
-    const MODAL_WINDOW_EXIT_BUTTON = document.querySelector('.modal-exit');
 
     LEARN_MORE_BUTTONS.forEach((button) => {
         button.addEventListener('click', (e) => {
@@ -197,7 +196,20 @@ window.addEventListener('load', () => {
             });
 
             document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
+            document.querySelector(`[data-target="${path}"]`)
+                .appendChild(generateModalContent(
+                    Math.floor(Math.random() * fetchedPetsObject.length)));
+            //todo: ^^
             MODAL_OVERLAY.classList.add('modal-overlay--visible');
+            const MODAL_WINDOW_EXIT_BUTTON = document.querySelector('.modal-exit');
+
+            MODAL_WINDOW_EXIT_BUTTON.addEventListener('click', () => {
+                MODAL_OVERLAY.classList.remove('modal-overlay--visible');
+                ALL_MODAL_WINDOWS.forEach((el) => {
+                    el.classList.remove('modal--visible');
+                    el.innerHTML = '';
+                });
+            })
         });
     });
 
@@ -207,16 +219,77 @@ window.addEventListener('load', () => {
             MODAL_OVERLAY.classList.remove('modal-overlay--visible');
             ALL_MODAL_WINDOWS.forEach((el) => {
                 el.classList.remove('modal--visible');
+                el.innerHTML = '';
             });
         }
     });
-
-    MODAL_WINDOW_EXIT_BUTTON.addEventListener('click', () => {
-        MODAL_OVERLAY.classList.remove('modal-overlay--visible');
-        ALL_MODAL_WINDOWS.forEach((el) => {
-            el.classList.remove('modal--visible');
-        });
-    })
 });
+
+function generateModalContent(pet) {
+    const petModal = document.createElement('div');
+    petModal.classList.add('petModal')
+    const modalExit = document.createElement('button');
+    modalExit.classList.add('modal-exit');
+
+    const modalPicture = document.createElement('picture');
+    modalPicture.classList.add('modal__picture');
+    const petImg = document.createElement('img');
+    petImg.src = fetchedPetsObject[pet].img;
+    modalPicture.appendChild(petImg);
+
+    const modalContentWrapper = document.createElement('div');
+    modalContentWrapper.classList.add('modal-content-wrapper');
+
+    const modalContent = document.createElement('div');
+    modalContent.classList.add('modal__content');
+
+    const h3 = document.createElement('h3');
+    h3.classList.add('modal__header');
+    h3.innerHTML = fetchedPetsObject[pet].name;
+
+    const h4 = document.createElement('h4');
+    h4.classList.add('modal__sub-header');
+    h4.innerHTML = `${fetchedPetsObject[pet].type} - ${fetchedPetsObject[pet].breed}`;
+
+    const petDescription = document.createElement('p');
+    petDescription.classList.add('modal__description');
+    petDescription.innerHTML = fetchedPetsObject[pet].description;
+
+    const petUl = document.createElement('ul');
+    petUl.classList.add('modal__list');
+
+    let petLiAge = document.createElement('li');
+    petLiAge.classList.add('modal-list__item');
+    petLiAge.innerHTML = `Age: <span>${fetchedPetsObject[pet].age}</span>`;
+
+    let petLiInoculations = document.createElement('li');
+    petLiInoculations.classList.add('modal-list__item');
+    petLiInoculations.innerHTML = `Inoculations: <span>${fetchedPetsObject[pet].inoculations}</span>`;
+
+    let Diseases = document.createElement('li');
+    Diseases.classList.add('modal-list__item');
+    Diseases.innerHTML = `Diseases: <span>${fetchedPetsObject[pet].diseases}</span>`;
+
+    let Parasites = document.createElement('li');
+    Parasites.classList.add('modal-list__item');
+    Parasites.innerHTML = `Parasites: <span>${fetchedPetsObject[pet].parasites}</span>`;
+
+    petUl.appendChild(petLiAge);
+    petUl.appendChild(petLiInoculations);
+    petUl.appendChild(Diseases);
+    petUl.appendChild(Parasites);
+
+    modalContent.appendChild(h3);
+    modalContent.appendChild(h4);
+    modalContent.appendChild(petDescription);
+    modalContent.appendChild(petUl);
+
+    modalContentWrapper.appendChild(modalContent);
+
+    petModal.appendChild(modalExit);
+    petModal.appendChild(modalPicture);
+    petModal.appendChild(modalContentWrapper);
+    return petModal;
+}
 
 /*POP_UP handler ends*/

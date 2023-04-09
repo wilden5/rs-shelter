@@ -1516,7 +1516,7 @@ header {
 /* POP_UP ends*/
 
 .modal__picture {
-    width: 55.5%;
+    width: 54.5%;
 }
 
 .modal__picture img{
@@ -1527,6 +1527,8 @@ header {
 .modal-content-wrapper {
     width: 44.5%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal__content {
@@ -1589,4 +1591,8 @@ header {
 
 .modal-list__item span {
     font-weight: 400;
+}
+
+.petModal {
+    display: flex;
 }
