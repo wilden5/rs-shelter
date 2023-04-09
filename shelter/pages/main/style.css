@@ -1460,7 +1460,7 @@ header {
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(41, 41, 41, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1468,7 +1468,7 @@ header {
     width: 100%;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
 .modal {
@@ -1481,6 +1481,8 @@ header {
     display: none;
     border-radius: 10px;
     gap: 29px;
+    opacity: 0;
+    transition: opacity 1.3s ease-in-out;
 }
 
 .modal-exit {
@@ -1506,11 +1508,12 @@ header {
 .modal-overlay--visible {
     opacity: 1;
     visibility: visible;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
 .modal--visible {
     display: flex;
+    opacity: 1;
 }
 
 /* POP_UP ends*/
