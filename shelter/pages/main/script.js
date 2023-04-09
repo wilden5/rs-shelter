@@ -185,9 +185,11 @@ window.addEventListener('load', () => {
     const LEARN_MORE_BUTTONS = document.querySelectorAll('.pe-button');
     const MODAL_OVERLAY = document.querySelector('.modal__overlay');
     const ALL_MODAL_WINDOWS = document.querySelectorAll('.modal');
+    const MODAL_WINDOW_EXIT_BUTTON = document.querySelector('.modal-exit');
 
     LEARN_MORE_BUTTONS.forEach((button) => {
         button.addEventListener('click', (e) => {
+            body.classList.toggle('no-scroll');
             let path = e.currentTarget.getAttribute('data-path');
 
             ALL_MODAL_WINDOWS.forEach((el) => {
@@ -201,13 +203,20 @@ window.addEventListener('load', () => {
 
     MODAL_OVERLAY.addEventListener('click', (e) => {
         if (e.target === MODAL_OVERLAY) {
+            body.classList.toggle('no-scroll');
             MODAL_OVERLAY.classList.remove('modal-overlay--visible');
             ALL_MODAL_WINDOWS.forEach((el) => {
                 el.classList.remove('modal--visible');
             });
         }
     });
-});
 
+    MODAL_WINDOW_EXIT_BUTTON.addEventListener('click', () => {
+        MODAL_OVERLAY.classList.remove('modal-overlay--visible');
+        ALL_MODAL_WINDOWS.forEach((el) => {
+            el.classList.remove('modal--visible');
+        });
+    })
+});
 
 /*POP_UP handler ends*/
