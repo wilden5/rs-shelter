@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Wilden's Our Pets</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="icon" href="../../assets/icons/site-icon.ico">
+</head>
+<body>
+<header class="header">
+	<div class="header__container">
+		<a class="header__main-link" href="../main/index.html">
+			<div class="header__logo-container">
+				<h1 class="header__name">Cozy House</h1>
+				<span class="header__motto">Shelter for pets in Boston</span>
+			</div>
+		</a>
+		<button class="burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<nav class="header__navbar">
+			<ul class="navbar__list">
+				<li class="navbar__item"><a href="../main/index.html" class="navbar__link">About the shelter</a></li>
+				<li class="navbar__item"><a href="#" class="navbar__link nav-active">Our pets</a></li>
+				<li class="navbar__item"><a href="../main/index.html#help" class="navbar__link">Help the shelter</a>
+				</li>
+				<li class="navbar__item"><a href="#footer" class="navbar__link">Contacts</a></li>
+			</ul>
+		</nav>
+		<div class="header__overlay"></div>
+	</div>
+</header>
+<main class="our-pets-page">
+	<section id="our-friends" class="our-pets-page__pets">
+		<div class="pets__container">
+			<h3 class="pets__heading">Our friends who
+				are&nbsp;looking for a house</h3>
+			<div class="pets__content"></div>
+			<div class="pets__navigation">
+				<button class="pets__paginator-double-prev pag-button pag-disabled">&lt;&lt;</button>
+				<button class="pets__paginator-prev pag-button pag-disabled">&lt;</button>
+				<button class="pets__paginator-active pag-button"></button>
+				<button class="pets__paginator-next pag-button pag-a pag-disabled">&gt;</button>
+				<button class="pets__paginator-double-next pag-button pag-a pag-disabled">&gt;&gt;</button>
+			</div>
+		</div>
+	</section>
+</main>
+<footer id="footer" class="footer">
+	<div class="footer__container">
+		<div class="footer__contacts">
+			<h3 class="contacts__title">For questions and suggestions</h3>
+			<div class="contacts__email">
+				<picture class="contacts__email-icon">
+					<img src="../../assets/icons/icon-email.svg" alt="email">
+				</picture>
+				<a href="mailto:email@shelter.com" class="contacts__direct-email">email@shelter.com</a>
+			</div>
+			<div class="contacts__phone">
+				<picture class="contacts__phone-icon">
+					<img src="../../assets/icons/icon-phone.svg" alt="phone">
+				</picture>
+				<a href="tel:+136745677554" class="contacts__direct-phone">+13 674 567 75 54</a>
+			</div>
+		</div>
+		<div class="footer__locations">
+			<h3 class="locations__title">We are waiting for your visit</h3>
+			<div class="locations__boston">
+				<picture class="boston__nav-icon">
+					<img src="../../assets/icons/icon-marker.svg" alt="navigation">
+				</picture>
+				<a href="https://goo.gl/maps/jZXzrf2a9q6V7wfj6" class="boston__nav-address" target="_blank">1 Central
+					Street, Boston (entrance from the store)</a>
+			</div>
+			<div class="locations__london">
+				<picture class="london__nav-icon">
+					<img src="../../assets/icons/icon-marker.svg" alt="navigation">
+				</picture>
+				<a href="https://goo.gl/maps/T41h1jgPJxTtixPG7" class="london__nav-address" target="_blank">18 South
+					Park, London</a>
+			</div>
+		</div>
+		<picture class="footer_puppy">
+			<img src="../../assets/images/footer-puppy.png" alt="footer-puppy">
+		</picture>
+	</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

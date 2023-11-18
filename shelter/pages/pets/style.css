@@ -1,0 +1,718 @@
+@font-face {
+    font-family: 'Arial';
+    src: url('../../assets/fonts/arial/Arial.woff2') format('woff2'),
+    url('../../assets/fonts/arial/Arial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('../../assets/fonts/georgia/Georgia.woff2') format('woff2'),
+    url('../../assets/fonts/georgia/Georgia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../../assets/fonts/arial/Arial-Italic.woff2') format('woff2'),
+    url('../../assets/fonts/arial/Arial-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+[class*=__container] {
+    max-width: 80rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, p, ul, span {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*Header styles starts*/
+
+.header__container {
+    padding-top: 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header__logo-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.875rem;
+}
+
+.header__main-link {
+    padding-left: 2.5rem;
+}
+
+.header__name {
+    color: #545454;
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.625rem;
+}
+
+.header__motto {
+    color: #292929;
+    font-family: 'Arial', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.813rem;
+    line-height: 0.938rem;
+    letter-spacing: 0.1em;
+    padding-left: 0.25rem;
+}
+
+.navbar__list {
+    display: flex;
+    list-style-type: none;
+    padding-top: 1rem;
+    gap: 2.188rem;
+    margin-right: 2.625rem;
+}
+
+.navbar__link {
+    font-family: 'Arial', serif;
+    font-style: normal;
+    color: #545454;
+    font-weight: 400;
+    font-size: 0.938rem;
+    line-height: 160%;
+    padding-bottom: 0.188rem;
+}
+
+.nav-active {
+    color: #292929;
+    border-bottom: 0.188rem solid #F1CDB3;
+}
+
+.navbar__link:hover {
+    color: #292929;
+    border-bottom: 0.188rem solid #F1CDB3;
+}
+
+.burger {
+    display: none;
+    border: none;
+    background: none;
+    margin-right: 1.25rem;
+    cursor: pointer;
+    padding: 0;
+    transition: ease all 1s;
+}
+
+.burger span {
+    display: block;
+    width: 1.688rem;
+    background-color: black;
+    margin: 0.438rem 0;
+    border: 0.125rem solid black;
+}
+
+.burger-opened {
+    transform: rotate(90deg);
+    transition: ease all 1s;
+}
+
+.header__overlay {
+    display: none;
+}
+
+/*Header styles ends*/
+
+/*Pets styles starts*/
+
+.our-pets-page__pets {
+    background: #F6F6F6;
+}
+
+.pets__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    margin: 0 auto;
+    padding-bottom: 6.3rem;
+}
+
+.pets__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 1.813rem;
+    margin-bottom: 3.625rem;
+}
+
+.pets__heading {
+    align-self: center;
+    width: 33.33%;
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.188rem;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+    margin-bottom: 3.75rem;
+}
+
+.pets__card {
+    transition: all 1.5s ease 0s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FAFAFA;
+}
+
+.pets__card:hover {
+    transform: scale(1.04);
+}
+
+.pe-name {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.438rem;
+    letter-spacing: 0.06em;
+    color: #545454;
+    padding-top: 1.563rem;
+    margin-bottom: 1.75rem;
+}
+
+.pe-button {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.063rem;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    padding: 0.938rem 2.813rem;
+    border: 0.125rem solid #F1CDB3;
+    border-radius: 6.25rem;
+    background-color: inherit;
+    margin-bottom: 1.875rem;
+}
+
+.pe-button:hover {
+    background: #F1CDB3;
+}
+
+.pets__navigation {
+    display: flex;
+    justify-content: space-evenly;
+    width: 28.5%;
+    align-self: center;
+}
+
+.pag-button {
+    background: transparent;
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 6.25rem;
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+.pag-button:last-child {
+    margin-right: 0;
+}
+
+.pets__paginator-double-prev,
+.pets__paginator-prev,
+.pets__paginator-double-next {
+    border: 0.125rem solid #CDCDCD;
+    color: #CDCDCD;
+    cursor: auto;
+}
+
+.pets__paginator-active {
+    background: #F1CDB3;
+    cursor: auto;
+}
+
+.pag-disabled {
+    border: 0.125rem solid #CDCDCD;
+    color: #CDCDCD;
+    cursor: auto;
+}
+
+.pag-a {
+    border: 0.125rem solid #F1CDB3;
+    color: #292929;
+    cursor: pointer;
+}
+
+/*Pets styles ends*/
+
+/*Footer styles starts*/
+
+.footer {
+    background-size: cover;
+    background-image: url(../../assets/images/footer-gradient-background.png);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 2.5rem;
+}
+
+.footer_puppy img {
+    margin-bottom: -0.25rem;
+    padding-right: 2.5rem;
+}
+
+.footer__contacts {
+    width: 23.4%;
+    padding-top: 1rem;
+    padding-left: 2.5rem;
+}
+
+.contacts__title {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.188rem;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin-bottom: 2.5rem;
+}
+
+.contacts__email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.188rem;
+}
+
+.contacts__email-icon {
+    margin-right: 1.25rem;
+}
+
+.contacts__direct-email {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+
+.contacts__phone {
+    display: flex;
+}
+
+.contacts__phone-icon {
+    margin-right: 1.25rem;
+}
+
+.contacts__direct-phone {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    padding-top: 0.313rem;
+}
+
+.footer__locations {
+    width: 25%;
+    padding-top: 1rem;
+}
+
+.locations__title {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.188rem;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin-bottom: 2.125rem;
+}
+
+.locations__boston {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.boston__nav-icon,
+.london__nav-icon {
+    margin-right: 1.25rem;
+}
+
+.boston__nav-address {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+
+.locations__london {
+    display: flex;
+}
+
+.london__nav-address {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    padding-top: 0.25rem;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+/*Footer styles ends*/
+
+@media screen and (max-width: 1200px) {
+    .pets__navigation {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        gap: 0.25rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    /*Header 768 starts*/
+
+    .header__main-link {
+        padding-left: 1.9rem;
+    }
+
+    .navbar__list {
+        margin-right: 2rem;
+    }
+
+    /*Header 768 ends*/
+
+    /*Pets 768 starts*/
+
+    .pets__container {
+        padding-bottom: 4.55rem;
+    }
+
+    .pets__heading {
+        width: 53%;
+        text-align: center;
+        margin-bottom: 1.875rem;
+    }
+
+    .pets__content {
+        gap: 2.5rem;
+        row-gap: 1.875rem;
+        justify-content: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .p-card7, .p-card8 {
+        display: none;
+    }
+
+    .pets__navigation {
+        width: 47.5%;
+    }
+
+    /*Pets 768 ends*/
+
+    /*Footer 768 starts*/
+
+    .footer__container {
+        flex-wrap: wrap;
+        padding-top: 1.875rem;
+        justify-content: space-evenly;
+        row-gap: 3.75rem;
+    }
+
+    .footer__contacts {
+        width: 36.8%;
+        padding: 0 0 0 0.313rem;
+    }
+
+    .footer__locations {
+        width: 39.3%;
+        padding: 0;
+        margin-right: 0.313rem;
+    }
+
+    .footer_puppy {
+        width: 44%;
+    }
+
+    .footer_puppy img {
+        padding-left: 1.188rem;
+        padding-right: 0;
+    }
+
+    /*Footer 768 ends*/
+}
+
+@media screen and (max-width: 767px){
+    .header__navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: #292929;
+        opacity: 0;
+        height: 100%;
+        width: 320px;
+        top: 0;
+        right: -100%;
+        transition: opacity .5s ease, right .5s ease;
+        z-index: 2;
+    }
+
+    .header-active {
+        right: 0;
+        opacity: 1;
+    }
+
+    .burger {
+        display: block;
+        margin-bottom: 1.875rem;
+        z-index: 3;
+    }
+
+    .navbar__link {
+        color: #CDCDCD;
+    }
+
+    .nav-active {
+        color: #FAFAFA;
+    }
+
+    .nav-active:visited {
+        color: #FAFAFA;
+    }
+
+    .navbar__list {
+        flex-direction: column;
+        align-items: center;
+        width: 76%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar__link {
+        font-size: 32px;
+    }
+
+    .header__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(41, 41, 41, 0.6);
+        z-index: 1;
+        display: none;
+    }
+
+    .header-active ~ .header__overlay{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 715px) {
+
+    .pets__heading {
+        width: 65%;
+        font-size: 1.875rem;
+    }
+
+    .pets__navigation {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 670px){
+
+    .pets__heading {
+        width: 75%;
+        font-size: 1.688rem;
+    }
+
+}
+
+@media screen and (max-width: 570px){
+    .pets__navigation {
+        width: 75%;
+    }
+}
+
+/*Media 320 starts*/
+
+@media screen and (max-width: 500px) {
+
+    /*Header 320 starts*/
+
+    .header__main-link {
+        padding-left: 1.2rem;
+    }
+
+    .burger {
+        /*margin-bottom: 1.875rem;*/
+    }
+
+    /*Header 320 ends*/
+
+    /*Pets 320 starts*/
+
+    .pets__container {
+        padding-top: 2.625rem;
+        padding-bottom: 2.625rem;
+    }
+
+    .pets__heading {
+        width: 90%;
+        font-size: 1.563rem;
+        text-align: center;
+        text-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+        margin-bottom: 2.625rem;
+    }
+
+    .p-card4, .p-card5, .p-card6 {
+        display: none;
+    }
+
+    .pets__navigation {
+        width: 93.5%;
+        padding: 0;
+    }
+
+    .pag-button {
+        margin: 0;
+        padding: 0;
+    }
+
+    .pets__paginator-active {
+        margin-right: 0.438rem;
+    }
+
+    /*Pets 320 ends*/
+
+    /*Footer 320 starts*/
+
+    .footer__container {
+        width: 93%;
+        flex-direction: column;
+        row-gap: 2.2rem;
+    }
+
+    .footer__contacts {
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contacts__title {
+        text-align: center;
+        font-size: 1.563rem;
+        padding-left: 0.875rem;
+    }
+
+    .footer__locations {
+        width: 100%;
+    }
+
+    .locations__title {
+        width: 90%;
+        text-align: center;
+        font-size: 1.563rem;
+        padding-left: 0.938rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .contacts__email {
+        justify-content: flex-end;
+        padding-right: 0.313rem;
+        padding-left: 1.125rem;
+    }
+
+    .contacts__direct-email {
+        margin-bottom: 0.313rem;
+    }
+
+    .contacts__phone {
+        justify-content: flex-end;
+        padding-right: 0.688rem;
+        padding-left: 1.438rem;
+    }
+
+    .locations__boston {
+        margin-bottom: 2.5rem;
+    }
+
+    .boston__nav-icon {
+        padding-top: 0.438rem;
+    }
+
+    .footer_puppy {
+        width: 87.5%;
+    }
+
+    .footer_puppy img {
+        max-width: 100%;
+    }
+
+    /*Footer 320 ends*/
+}
